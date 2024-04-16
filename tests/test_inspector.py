@@ -1,0 +1,28 @@
+import io
+import json
+import unittest
+
+from inspector import parse_line, read_rows, summarize
+
+
+def line(route='/tours', status=200, duration=20, trace='abc'):
+    return json.dumps({'timestamp': '2026-11-06T12:00:00Z', 'route': route, 'status': status,
+                       'duration_ms': duration, 'trace_id': trace}).encode() + b'\n'
+
+
+class InspectorTests(unittest.TestCase):
+    def test_nearest_rank_latency_and_error_rate(self):
+        rows = read_rows(io.BytesIO(b''.join(line(status=503 if index == 19 else 200,
+                                             duration=index + 1) for index in range(20))))
+        summary = summarize(rows)
+        self.assertEqual(summary['routes'][0]['p50_ms'], 10)
+        self.assertEqual(summary['routes'][0]['p95_ms'], 19)
+        self.assertEqual(summary['routes'][0]['error_rate_pct'], '5.00')
+
+    def test_trace_filter_and_invalid_rows(self):
+        rows = read_rows(io.BytesIO(line(trace='one') + line('/health', trace='two')))
+        self.assertEqual(summarize(rows, trace_id='one')['total_requests'], 1)
+        for raw in (b'{"status":200,"status":500}\n', b'[]\n', line(duration=-1), line(route='/a?secret=1')):
+            with self.assertRaises(ValueError):
+                read_rows(io.BytesIO(raw))
+        self.assertEqual(parse_line(line().strip())['route'], '/tours')
