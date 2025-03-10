@@ -1,0 +1,4 @@
+{"timestamp":"2026-11-06T12:00:00Z","route":"/tours/options","status":200,"duration_ms":42,"trace_id":"tour-a"}
+{"timestamp":"2026-11-06T12:00:01Z","route":"/tours/options","status":200,"duration_ms":77,"trace_id":"tour-b"}
+{"timestamp":"2026-11-06T12:00:02Z","route":"/tours/bookings","status":503,"duration_ms":890,"trace_id":"tour-c"}
+{"timestamp":"2026-11-06T12:00:03Z","route":"/tours/bookings","status":202,"duration_ms":120,"trace_id":"tour-d"}
