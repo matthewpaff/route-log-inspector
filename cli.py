@@ -6,6 +6,7 @@ import json
 import sys
 
 from inspector import evaluate_slo, read_rows, summarize
+from analysis import compare_samples, trace_timeline, window_rows
 
 
 def csv_report(summary):
@@ -22,6 +23,11 @@ def main(argv=None):
     parser.add_argument('path', nargs='?', default='-', help='UTF-8 JSONL file or - for stdin')
     parser.add_argument('--route', help='exact route template filter')
     parser.add_argument('--trace-id', help='exact trace ID filter')
+    parser.add_argument('--since', help='inclusive timezone-aware ISO lower bound')
+    parser.add_argument('--until', help='exclusive timezone-aware ISO upper bound')
+    parser.add_argument('--timeline', action='store_true', help='JSON event timeline; requires --trace-id')
+    parser.add_argument('--baseline', help='compare selected rows with a separate JSONL baseline')
+    parser.add_argument('--minimum-requests', type=int, default=20, help='per-sample route count needed for comparison')
     parser.add_argument('--format', choices=('json', 'csv'), default='json')
     parser.add_argument('--slo-p95-ms', type=int, help='optional p95 threshold for every selected route')
     parser.add_argument('--slo-5xx-pct', help='optional maximum 5xx percent for every selected route')
@@ -34,6 +40,27 @@ def main(argv=None):
         else:
             with open(args.path, 'rb') as source:
                 rows = read_rows(source)
+        rows = window_rows(rows, args.since, args.until)
+        if args.timeline or args.baseline:
+            if args.format != 'json' or args.slo_p95_ms is not None or args.slo_5xx_pct is not None:
+                raise ValueError('Timeline and baseline modes require JSON and cannot combine with SLO gates')
+            if args.timeline and args.baseline:
+                raise ValueError('Choose either timeline or baseline mode')
+            if args.route is not None or args.trace_id is not None:
+                summarize(rows, args.route, args.trace_id)  # validate filters before applying them
+                rows = [row for row in rows if (args.route is None or row['route'] == args.route)
+                        and (args.trace_id is None or row['trace_id'] == args.trace_id)]
+            if args.timeline:
+                result = trace_timeline(rows, args.trace_id)
+            else:
+                with open(args.baseline, 'rb') as source:
+                    baseline = read_rows(source)
+                if args.route is not None or args.trace_id is not None:
+                    baseline = [row for row in baseline if (args.route is None or row['route'] == args.route)
+                                and (args.trace_id is None or row['trace_id'] == args.trace_id)]
+                result = compare_samples(baseline, rows, args.minimum_requests)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+            return 0
         result = summarize(rows, args.route, args.trace_id)
         if (args.slo_p95_ms is None) != (args.slo_5xx_pct is None):
             raise ValueError('Both SLO thresholds are required together')
