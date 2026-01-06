@@ -1,3 +1,8 @@
+> **Illustrative Git calendar:** 2024-01-08 through 2026-10-23, assigned November 6, 2026.
+> Actual development occurred in November 2026. These dates are simulated,
+> not evidence of historical work or employment. This supersedes older
+> statements below about actual Git dates. See [HISTORY.md](HISTORY.md).
+
 # Route Log Inspector
 
 A dependency-free CLI for inspecting supplied JSONL request logs. It calculates deterministic nearest-rank p50/p95 latency, 5xx rate by route, optional trace filtering, and explicit sample-based SLO checks. Created in November 2026 with actual commit dates as a practical utility inspired by the blueprint's 2024–2026 operations theme.
