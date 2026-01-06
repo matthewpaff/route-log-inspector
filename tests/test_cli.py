@@ -27,3 +27,9 @@ class CLITests(unittest.TestCase):
     def test_missing_file_is_a_file_error(self):
         result = self.run_cli('missing.jsonl')
         self.assertEqual(result.returncode, 1)
+
+    def test_slo_gate_returns_distinct_failure_exit(self):
+        failed = self.run_cli('sample.jsonl', '--slo-p95-ms', '500', '--slo-5xx-pct', '1')
+        self.assertEqual(failed.returncode, 3)
+        self.assertFalse(json.loads(failed.stdout)['slo']['passed'])
+        self.assertEqual(self.run_cli('sample.jsonl', '--slo-p95-ms', '500').returncode, 2)

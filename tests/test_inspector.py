@@ -2,7 +2,7 @@ import io
 import json
 import unittest
 
-from inspector import parse_line, read_rows, summarize
+from inspector import evaluate_slo, parse_line, read_rows, summarize
 
 
 def line(route='/tours', status=200, duration=20, trace='abc'):
@@ -26,3 +26,10 @@ class InspectorTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 read_rows(io.BytesIO(raw))
         self.assertEqual(parse_line(line().strip())['route'], '/tours')
+
+    def test_slo_failures_and_empty_samples_are_explicit(self):
+        summary = summarize(read_rows(io.BytesIO(line(status=503, duration=800))))
+        gate = evaluate_slo(summary, 500, '1.00')
+        self.assertFalse(gate['passed'])
+        self.assertEqual({row['check'] for row in gate['violations']}, {'p95_ms', 'error_rate_pct'})
+        self.assertFalse(evaluate_slo(summarize([]), 500, '1.00')['passed'])

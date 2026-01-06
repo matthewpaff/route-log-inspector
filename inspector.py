@@ -1,7 +1,7 @@
 """Bounded JSONL parsing and deterministic route latency/error summaries."""
 from collections import defaultdict
 from datetime import datetime
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation
 import json
 import re
 
@@ -86,3 +86,25 @@ def summarize(rows, route=None, trace_id=None):
                        'p95_ms': durations[(95 * len(durations) + 99) // 100 - 1]})
     return {'routes': result, 'total_requests': sum(row['requests'] for row in result),
             'basis': 'supplied log rows; nearest-rank percentiles'}
+
+
+def evaluate_slo(summary, p95_limit_ms, error_rate_limit_pct):
+    if type(p95_limit_ms) is not int or not 1 <= p95_limit_ms <= 600000:
+        raise ValueError('p95 limit must be 1-600000 ms')
+    try:
+        error_limit = Decimal(str(error_rate_limit_pct))
+    except (InvalidOperation, ValueError, TypeError) as error:
+        raise ValueError('Invalid 5xx rate limit') from error
+    if not error_limit.is_finite() or not 0 <= error_limit <= 100:
+        raise ValueError('5xx rate limit must be 0-100 percent')
+    violations = []
+    for row in summary['routes']:
+        if row['p95_ms'] > p95_limit_ms:
+            violations.append({'route': row['route'], 'check': 'p95_ms', 'actual': row['p95_ms'], 'limit': p95_limit_ms})
+        if Decimal(row['errors_5xx'] * 100) / Decimal(row['requests']) > error_limit:
+            violations.append({'route': row['route'], 'check': 'error_rate_pct',
+                               'actual': row['error_rate_pct'], 'limit': format(error_limit, '.2f')})
+    if not summary['total_requests']:
+        violations.append({'route': None, 'check': 'sample_size', 'actual': 0, 'limit': 'at least one request'})
+    return {'passed': not violations, 'violations': violations,
+            'basis': 'supplied sample only; no production SLO claim'}
