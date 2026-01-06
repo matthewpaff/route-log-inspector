@@ -1,28 +1,7 @@
-## Disclosed illustrative Git calendar - assigned November 6, 2026
+# Provenance and illustrative calendar
 
-The owner requested an illustrative calendar spanning 2024-01-08 through 2026-10-23.
-Theme basis: The README's existing modeled 2024-2026 operations and observability theme.
+Actual project implementation and this expansion occurred in November 2026 with AI assistance. On November 6, the owner requested an illustrative January-November 2026 calendar, including uneven daily counts, gaps, fewer weekend dates, and no US federal holidays. US holidays are an explicit calendar assumption, not a claim about an employment location.
 
-All Git author and committer dates in the published replacement history
-are simulated presentation dates. They were assigned in November 2026
-using deterministic weekday spacing in topological commit order. They
-are not evidence of work performed, skills, employment, production use,
-or software existing in those earlier periods. Actual project creation
-and implementation occurred in November 2026 with AI assistance.
+The 2026 Git author and committer dates are simulated presentation dates. They do not establish historical work, employment, production usage, or when the software existed. The original actual-date histories and the previous illustrative revision are retained in independent local mirrors and verified portable bundles. Old-to-new commit mappings and a day-by-day schedule are retained in the workspace expansion report. GitHub repository creation, PR, review, issue, and workflow timestamps remain actual.
 
-The original actual-date history, signed objects, independent mirror,
-portable bundle, original timestamp headers, and old-to-new commit map
-are preserved locally. Existing file trees, messages, identities, and
-merge relationships were preserved. Invalidated signatures were removed
-from rewritten counterparts. Only this new documentation commit changes
-README.md and HISTORY.md; application code, tests, and data are unchanged.
-
-Earlier statements below or elsewhere that Git dates are actual describe
-the pre-revision history and are superseded by this notice. GitHub
-repository creation, PRs, reviews, and other server timestamps remain actual.
-
----
-
-# Provenance
-
-Route Log Inspector was created in November 2026 as an original local utility. All commits use their actual dates. The sample JSONL and SLO thresholds are synthetic exercises, not measurements of an employer service or real incidents.
+This expansion adds functional changes and a parameterized synthetic regression library. Most new commits each add one scenario file; they are not separate feature implementations. Messages describe the behavior asserted by that case. There are no empty padding commits. All earlier provenance statements about actual Git dates or a June-October-only calendar are superseded by this notice. The route inspector retains its two existing illustrative 2024-2025 commits. No third-party code, identities, or contribution attribution is copied.
