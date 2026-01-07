@@ -20,3 +20,5 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Run inspector and CLI tests
         run: python -m unittest discover -s tests -v
+      - name: Exercise trace timeline export
+        run: python cli.py sample.jsonl --timeline --trace-id tour-a
