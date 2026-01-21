@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0030/:id",
+        "status": 503,
+        "duration_ms": 40,
+        "trace_id": "trace-0030"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0030/:id",
+        "status": 200,
+        "duration_ms": 40,
+        "trace_id": "trace-0030"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0030/:id",
+        "status": 200,
+        "duration_ms": 40,
+        "trace_id": "trace-0030"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0030/:id",
+        "status": 200,
+        "duration_ms": 40,
+        "trace_id": "trace-0030"
+      }
+    ],
+    "p95_limit_ms": 40,
+    "error_rate_limit_pct": "25"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0031",
+  "description": "accept an exact 25 percent error boundary across 4 requests on /routes/0030/:id"
+}
