@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 200,
+        "duration_ms": 54,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 200,
+        "duration_ms": 54,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 200,
+        "duration_ms": 54,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 200,
+        "duration_ms": 54,
+        "trace_id": "trace-0044"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 503,
+        "duration_ms": 76,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 503,
+        "duration_ms": 76,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 503,
+        "duration_ms": 76,
+        "trace_id": "trace-0044"
+      },
+      {
+        "timestamp": "2026-02-18T12:00:00Z",
+        "route": "/routes/0044/:id",
+        "status": 503,
+        "duration_ms": 76,
+        "trace_id": "trace-0044"
+      }
+    ],
+    "minimum_requests": 4
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0044/:id",
+        "baseline_requests": 4,
+        "current_requests": 4,
+        "status": "compared",
+        "p95_delta_ms": 22,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0045",
+  "description": "report a 22 ms latency delta at the sample boundary on /routes/0044/:id"
+}
