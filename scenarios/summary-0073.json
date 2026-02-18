@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 181,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 178,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 175,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 172,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 169,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 503,
+        "duration_ms": 166,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 163,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 160,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 157,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 154,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 151,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 148,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 503,
+        "duration_ms": 145,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 142,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 139,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 133,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 130,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 127,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 503,
+        "duration_ms": 124,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 121,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 118,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 115,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 112,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 109,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 106,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 503,
+        "duration_ms": 103,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 100,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 97,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 94,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 91,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 200,
+        "duration_ms": 85,
+        "trace_id": "trace-0072"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0072/:id",
+        "status": 503,
+        "duration_ms": 82,
+        "trace_id": "trace-0072"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0072/:id",
+        "requests": 34,
+        "errors_5xx": 5,
+        "error_rate_pct": "14.71",
+        "p50_ms": 130,
+        "p95_ms": 178
+      }
+    ],
+    "total_requests": 34
+  },
+  "id": "summary-0073",
+  "description": "calculate nearest-rank latency for 34 samples on /routes/0072/:id"
+}
