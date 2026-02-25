@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 503,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 503,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 503,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 503,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      },
+      {
+        "timestamp": "2026-02-25T12:00:00Z",
+        "route": "/routes/0078/:id",
+        "status": 200,
+        "duration_ms": 88,
+        "trace_id": "trace-0078"
+      }
+    ],
+    "p95_limit_ms": 88,
+    "error_rate_limit_pct": "25"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0079",
+  "description": "accept an exact 25 percent error boundary across 16 requests on /routes/0078/:id"
+}
