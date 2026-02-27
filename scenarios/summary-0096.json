@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-15T12:00:00Z",
+        "route": "/routes/0095/:id",
+        "status": 200,
+        "duration_ms": 600000,
+        "trace_id": "trace-0095"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0095/:id",
+        "requests": 1,
+        "errors_5xx": 0,
+        "error_rate_pct": "0.00",
+        "p50_ms": 600000,
+        "p95_ms": 600000
+      }
+    ],
+    "total_requests": 1
+  },
+  "id": "summary-0096",
+  "description": "accept the 600000 ms duration boundary on /routes/0095/:id"
+}
