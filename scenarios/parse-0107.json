@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-26T12:00:00Z\", \"route\": \"/routes/0106/:id\", \"status\": 200, \"duration_ms\": 116, \"trace_id\": \"trace-0106\",\"duration_ms\":999}\n"
+  },
+  "error_contains": "Duplicate log field",
+  "id": "parse-0107",
+  "description": "reject repeated duration fields for trace-0106"
+}
