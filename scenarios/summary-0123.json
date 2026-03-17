@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-15T12:00:00Z",
+        "route": "/routes/0122/:id/other",
+        "status": 503,
+        "duration_ms": 500,
+        "trace_id": "trace-0122-other"
+      },
+      {
+        "timestamp": "2026-02-15T12:00:00Z",
+        "route": "/routes/0122/:id",
+        "status": 200,
+        "duration_ms": 132,
+        "trace_id": "trace-0122"
+      }
+    ],
+    "trace_id": "trace-0122"
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0122/:id",
+        "requests": 1,
+        "errors_5xx": 0,
+        "error_rate_pct": "0.00",
+        "p50_ms": 132,
+        "p95_ms": 132
+      }
+    ],
+    "total_requests": 1
+  },
+  "id": "summary-0123",
+  "description": "isolate trace filters for /routes/0122/:id"
+}
