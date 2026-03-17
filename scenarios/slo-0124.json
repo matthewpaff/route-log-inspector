@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [],
+    "p95_limit_ms": 133,
+    "error_rate_limit_pct": "1"
+  },
+  "expected": {
+    "passed": false,
+    "violations": [
+      [
+        null,
+        "sample_size"
+      ]
+    ]
+  },
+  "id": "slo-0124",
+  "description": "reject an empty SLO sample at a 133 ms budget"
+}
