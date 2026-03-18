@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 503,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 503,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0126/:id",
+        "status": 200,
+        "duration_ms": 136,
+        "trace_id": "trace-0126"
+      }
+    ],
+    "p95_limit_ms": 136,
+    "error_rate_limit_pct": "25"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0127",
+  "description": "accept an exact 25 percent error boundary across 8 requests on /routes/0126/:id"
+}
