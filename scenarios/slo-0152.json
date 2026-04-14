@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-17T12:00:00Z",
+        "route": "/routes/0151/:id",
+        "status": 200,
+        "duration_ms": 161,
+        "trace_id": "trace-0151"
+      },
+      {
+        "timestamp": "2026-02-17T12:00:00Z",
+        "route": "/routes/0151/:id",
+        "status": 200,
+        "duration_ms": 161,
+        "trace_id": "trace-0151"
+      },
+      {
+        "timestamp": "2026-02-17T12:00:00Z",
+        "route": "/routes/0151/:id",
+        "status": 500,
+        "duration_ms": 161,
+        "trace_id": "trace-0151"
+      }
+    ],
+    "p95_limit_ms": 161,
+    "error_rate_limit_pct": "33.33"
+  },
+  "expected": {
+    "passed": false,
+    "violations": [
+      [
+        "/routes/0151/:id",
+        "error_rate_pct"
+      ]
+    ]
+  },
+  "id": "slo-0152",
+  "description": "compare unrounded one-third error rates on /routes/0151/:id"
+}
