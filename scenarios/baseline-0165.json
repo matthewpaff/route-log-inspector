@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0164"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 503,
+        "duration_ms": 178,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 503,
+        "duration_ms": 178,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 503,
+        "duration_ms": 178,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 503,
+        "duration_ms": 178,
+        "trace_id": "trace-0164"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0164/:id",
+        "status": 503,
+        "duration_ms": 178,
+        "trace_id": "trace-0164"
+      }
+    ],
+    "minimum_requests": 5
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0164/:id",
+        "baseline_requests": 5,
+        "current_requests": 5,
+        "status": "compared",
+        "p95_delta_ms": 4,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0165",
+  "description": "report a 4 ms latency delta at the sample boundary on /routes/0164/:id"
+}
