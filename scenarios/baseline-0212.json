@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      },
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      },
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      },
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      },
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0211/:id",
+        "status": 200,
+        "duration_ms": 21,
+        "trace_id": "trace-0211"
+      }
+    ],
+    "minimum_requests": 6
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0211/:id",
+        "baseline_requests": 5,
+        "current_requests": 1,
+        "status": "insufficient_sample"
+      }
+    ]
+  },
+  "id": "baseline-0212",
+  "description": "withhold comparisons below 6 requests on /routes/0211/:id"
+}
