@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 117,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 110,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 103,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 96,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 89,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 82,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 503,
+        "duration_ms": 75,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 68,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 61,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 54,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 47,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 40,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 200,
+        "duration_ms": 33,
+        "trace_id": "trace-0216"
+      },
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0216/:id",
+        "status": 503,
+        "duration_ms": 26,
+        "trace_id": "trace-0216"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0216/:id",
+        "requests": 14,
+        "errors_5xx": 2,
+        "error_rate_pct": "14.29",
+        "p50_ms": 68,
+        "p95_ms": 117
+      }
+    ],
+    "total_requests": 14
+  },
+  "id": "summary-0217",
+  "description": "calculate nearest-rank latency for 14 samples on /routes/0216/:id"
+}
