@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-20T12:00:00Z",
+        "route": "/routes/0235/:id",
+        "status": 200,
+        "duration_ms": 45,
+        "trace_id": "trace-0235"
+      },
+      {
+        "timestamp": "2026-02-20T12:00:00Z",
+        "route": "/routes/0235/:id",
+        "status": 200,
+        "duration_ms": 45,
+        "trace_id": "trace-0235"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-20T12:00:00Z",
+        "route": "/routes/0235/:id",
+        "status": 200,
+        "duration_ms": 45,
+        "trace_id": "trace-0235"
+      }
+    ],
+    "minimum_requests": 3
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0235/:id",
+        "baseline_requests": 2,
+        "current_requests": 1,
+        "status": "insufficient_sample"
+      }
+    ]
+  },
+  "id": "baseline-0236",
+  "description": "withhold comparisons below 3 requests on /routes/0235/:id"
+}
