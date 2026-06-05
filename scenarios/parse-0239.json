@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-23T12:00:00Z\", \"route\": \"/routes/0238/:id\", \"status\": 200, \"duration_ms\": 48, \"trace_id\": \"trace-0238\", \"unapproved_field\": 238}\n"
+  },
+  "error_contains": "requires timestamp",
+  "id": "parse-0239",
+  "description": "reject unknown log fields for trace-0238"
+}
