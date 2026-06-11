@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 503,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 503,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      },
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0246/:id",
+        "status": 200,
+        "duration_ms": 56,
+        "trace_id": "trace-0246"
+      }
+    ],
+    "p95_limit_ms": 56,
+    "error_rate_limit_pct": "25"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0247",
+  "description": "accept an exact 25 percent error boundary across 8 requests on /routes/0246/:id"
+}
