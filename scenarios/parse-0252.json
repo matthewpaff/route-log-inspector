@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-09T12:00:00Z\", \"route\": \"/routes/0251/:id?token=synthetic\", \"status\": 200, \"duration_ms\": 61, \"trace_id\": \"trace-0251\"}\n"
+  },
+  "error_contains": "bounded path template",
+  "id": "parse-0252",
+  "description": "reject query strings in route templates for trace-0251"
+}
