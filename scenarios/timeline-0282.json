@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "timeline",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-03-12T12:01:00Z",
+        "route": "/routes/0281/:id",
+        "status": 200,
+        "duration_ms": 92,
+        "trace_id": "trace-0281"
+      },
+      {
+        "timestamp": "2026-03-12T04:00:00-08:00",
+        "route": "/routes/0281/:id",
+        "status": 200,
+        "duration_ms": 91,
+        "trace_id": "trace-0281"
+      },
+      {
+        "timestamp": "2026-02-12T12:00:00Z",
+        "route": "/routes/0281/:id",
+        "status": 200,
+        "duration_ms": 20,
+        "trace_id": "unrelated"
+      }
+    ],
+    "trace_id": "trace-0281"
+  },
+  "expected": {
+    "events": [
+      {
+        "timestamp": "2026-03-12T04:00:00-08:00",
+        "route": "/routes/0281/:id",
+        "status": 200,
+        "duration_ms": 91,
+        "trace_id": "trace-0281"
+      },
+      {
+        "timestamp": "2026-03-12T12:01:00Z",
+        "route": "/routes/0281/:id",
+        "status": 200,
+        "duration_ms": 92,
+        "trace_id": "trace-0281"
+      }
+    ],
+    "total_requests": 2
+  },
+  "id": "timeline-0282",
+  "description": "order trace trace-0281 by absolute time across offsets"
+}
