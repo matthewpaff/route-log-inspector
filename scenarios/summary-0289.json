@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0288/:id",
+        "status": 200,
+        "duration_ms": 104,
+        "trace_id": "trace-0288"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0288/:id",
+        "status": 200,
+        "duration_ms": 102,
+        "trace_id": "trace-0288"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0288/:id",
+        "status": 200,
+        "duration_ms": 100,
+        "trace_id": "trace-0288"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0288/:id",
+        "status": 503,
+        "duration_ms": 98,
+        "trace_id": "trace-0288"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0288/:id",
+        "requests": 4,
+        "errors_5xx": 1,
+        "error_rate_pct": "25.00",
+        "p50_ms": 100,
+        "p95_ms": 104
+      }
+    ],
+    "total_requests": 4
+  },
+  "id": "summary-0289",
+  "description": "calculate nearest-rank latency for 4 samples on /routes/0288/:id"
+}
