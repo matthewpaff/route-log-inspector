@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-12T12:00:00Z",
+        "route": "/routes/0308/:id",
+        "status": 200,
+        "duration_ms": 118,
+        "trace_id": "trace-0308"
+      },
+      {
+        "timestamp": "2026-02-12T12:00:00Z",
+        "route": "/routes/0308/:id",
+        "status": 200,
+        "duration_ms": 118,
+        "trace_id": "trace-0308"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-12T12:00:00Z",
+        "route": "/routes/0308/:id",
+        "status": 503,
+        "duration_ms": 128,
+        "trace_id": "trace-0308"
+      },
+      {
+        "timestamp": "2026-02-12T12:00:00Z",
+        "route": "/routes/0308/:id",
+        "status": 503,
+        "duration_ms": 128,
+        "trace_id": "trace-0308"
+      }
+    ],
+    "minimum_requests": 2
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0308/:id",
+        "baseline_requests": 2,
+        "current_requests": 2,
+        "status": "compared",
+        "p95_delta_ms": 10,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0309",
+  "description": "report a 10 ms latency delta at the sample boundary on /routes/0308/:id"
+}
