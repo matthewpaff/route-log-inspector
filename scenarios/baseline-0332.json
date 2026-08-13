@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      },
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-08T12:00:00Z",
+        "route": "/routes/0331/:id",
+        "status": 200,
+        "duration_ms": 141,
+        "trace_id": "trace-0331"
+      }
+    ],
+    "minimum_requests": 9
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0331/:id",
+        "baseline_requests": 8,
+        "current_requests": 1,
+        "status": "insufficient_sample"
+      }
+    ]
+  },
+  "id": "baseline-0332",
+  "description": "withhold comparisons below 9 requests on /routes/0331/:id"
+}
