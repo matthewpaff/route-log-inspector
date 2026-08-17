@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 156,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 155,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 154,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 503,
+        "duration_ms": 153,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 151,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 150,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 149,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 148,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 200,
+        "duration_ms": 147,
+        "trace_id": "trace-0336"
+      },
+      {
+        "timestamp": "2026-02-13T12:00:00Z",
+        "route": "/routes/0336/:id",
+        "status": 503,
+        "duration_ms": 146,
+        "trace_id": "trace-0336"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0336/:id",
+        "requests": 11,
+        "errors_5xx": 2,
+        "error_rate_pct": "18.18",
+        "p50_ms": 151,
+        "p95_ms": 156
+      }
+    ],
+    "total_requests": 11
+  },
+  "id": "summary-0337",
+  "description": "calculate nearest-rank latency for 11 samples on /routes/0336/:id"
+}
