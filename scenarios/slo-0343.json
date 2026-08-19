@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 503,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 503,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 503,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      },
+      {
+        "timestamp": "2026-02-19T12:00:00Z",
+        "route": "/routes/0342/:id",
+        "status": 200,
+        "duration_ms": 152,
+        "trace_id": "trace-0342"
+      }
+    ],
+    "p95_limit_ms": 152,
+    "error_rate_limit_pct": "25"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0343",
+  "description": "accept an exact 25 percent error boundary across 12 requests on /routes/0342/:id"
+}
