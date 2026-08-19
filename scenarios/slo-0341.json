@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-17T12:00:00Z",
+        "route": "/routes/0340/:id",
+        "status": 200,
+        "duration_ms": 150,
+        "trace_id": "trace-0340"
+      }
+    ],
+    "p95_limit_ms": 150,
+    "error_rate_limit_pct": "0"
+  },
+  "expected": {
+    "passed": true,
+    "violations": []
+  },
+  "id": "slo-0341",
+  "description": "accept equality at the 150 ms limit on /routes/0340/:id"
+}
