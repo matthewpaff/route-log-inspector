@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-25T12:00:00\", \"route\": \"/routes/0348/:id\", \"status\": 200, \"duration_ms\": 158, \"trace_id\": \"trace-0348\"}\n"
+  },
+  "error_contains": "include a timezone",
+  "id": "parse-0349",
+  "description": "reject ambiguous local log times for trace-0348"
+}
