@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 306,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 302,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 298,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 294,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 290,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 286,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 503,
+        "duration_ms": 282,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 278,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 274,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 270,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 266,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 262,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 258,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 503,
+        "duration_ms": 254,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 250,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 246,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 242,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 238,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 234,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 230,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 503,
+        "duration_ms": 226,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 222,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 218,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 214,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 210,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 206,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 202,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 503,
+        "duration_ms": 198,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 194,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 190,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 186,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 182,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 178,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 200,
+        "duration_ms": 174,
+        "trace_id": "trace-0360"
+      },
+      {
+        "timestamp": "2026-02-10T12:00:00Z",
+        "route": "/routes/0360/:id",
+        "status": 503,
+        "duration_ms": 170,
+        "trace_id": "trace-0360"
+      }
+    ]
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0360/:id",
+        "requests": 35,
+        "errors_5xx": 5,
+        "error_rate_pct": "14.29",
+        "p50_ms": 238,
+        "p95_ms": 302
+      }
+    ],
+    "total_requests": 35
+  },
+  "id": "summary-0361",
+  "description": "calculate nearest-rank latency for 35 samples on /routes/0360/:id"
+}
