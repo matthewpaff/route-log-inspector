@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "slo",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-15T12:00:00Z",
+        "route": "/routes/0365/:id",
+        "status": 200,
+        "duration_ms": 175,
+        "trace_id": "trace-0365"
+      }
+    ],
+    "p95_limit_ms": 174,
+    "error_rate_limit_pct": "0"
+  },
+  "expected": {
+    "passed": false,
+    "violations": [
+      [
+        "/routes/0365/:id",
+        "p95_ms"
+      ]
+    ]
+  },
+  "id": "slo-0366",
+  "description": "detect one millisecond above the 174 ms limit on /routes/0365/:id"
+}
