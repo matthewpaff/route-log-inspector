@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-18T12:00:00Z\", \"route\": \"/routes/0368/:id\", \"status\": 200, \"duration_ms\": -178, \"trace_id\": \"trace-0368\"}\n"
+  },
+  "error_contains": "Invalid duration",
+  "id": "parse-0369",
+  "description": "reject negative 178 ms durations on /routes/0368/:id"
+}
