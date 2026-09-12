@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "window",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-03-23T11:59:59Z",
+        "route": "/routes/0373/:id",
+        "status": 200,
+        "duration_ms": 20,
+        "trace_id": "trace-0373-before"
+      },
+      {
+        "timestamp": "2026-03-23T12:00:00Z",
+        "route": "/routes/0373/:id",
+        "status": 200,
+        "duration_ms": 20,
+        "trace_id": "trace-0373"
+      },
+      {
+        "timestamp": "2026-03-23T12:01:00Z",
+        "route": "/routes/0373/:id",
+        "status": 200,
+        "duration_ms": 20,
+        "trace_id": "trace-0373-upper"
+      }
+    ],
+    "since": "2026-03-23T12:00:00Z",
+    "until": "2026-03-23T12:01:00Z"
+  },
+  "expected": {
+    "trace_ids": [
+      "trace-0373"
+    ]
+  },
+  "id": "window-0374",
+  "description": "include the lower instant for trace-0373"
+}
