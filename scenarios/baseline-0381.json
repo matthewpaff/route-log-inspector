@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 200,
+        "duration_ms": 190,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 200,
+        "duration_ms": 190,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 200,
+        "duration_ms": 190,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 200,
+        "duration_ms": 190,
+        "trace_id": "trace-0380"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 503,
+        "duration_ms": 203,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 503,
+        "duration_ms": 203,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 503,
+        "duration_ms": 203,
+        "trace_id": "trace-0380"
+      },
+      {
+        "timestamp": "2026-02-03T12:00:00Z",
+        "route": "/routes/0380/:id",
+        "status": 503,
+        "duration_ms": 203,
+        "trace_id": "trace-0380"
+      }
+    ],
+    "minimum_requests": 4
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0380/:id",
+        "baseline_requests": 4,
+        "current_requests": 4,
+        "status": "compared",
+        "p95_delta_ms": 13,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0381",
+  "description": "report a 13 ms latency delta at the sample boundary on /routes/0380/:id"
+}
