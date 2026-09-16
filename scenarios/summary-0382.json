@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-04T12:00:00Z",
+        "route": "/routes/0381/:id",
+        "status": 200,
+        "duration_ms": 191,
+        "trace_id": "trace-0381"
+      }
+    ],
+    "route": "/routes/0381/:id/absent"
+  },
+  "expected": {
+    "routes": [],
+    "total_requests": 0
+  },
+  "id": "summary-0382",
+  "description": "return an explicit empty summary for an unmatched /routes/0381/:id filter"
+}
