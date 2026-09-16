@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0378/:id",
+        "status": 200,
+        "duration_ms": 188,
+        "trace_id": "trace-0378"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-01T12:00:00Z",
+        "route": "/routes/0378/:id/new",
+        "status": 200,
+        "duration_ms": 188,
+        "trace_id": "trace-0378"
+      }
+    ],
+    "minimum_requests": 1
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0378/:id",
+        "baseline_requests": 1,
+        "current_requests": 0,
+        "status": "missing_route"
+      },
+      {
+        "route": "/routes/0378/:id/new",
+        "baseline_requests": 0,
+        "current_requests": 1,
+        "status": "new_route"
+      }
+    ]
+  },
+  "id": "baseline-0379",
+  "description": "distinguish missing and newly observed variants of /routes/0378/:id"
+}
