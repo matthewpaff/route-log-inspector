@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "window",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-23T12:00:00Z",
+        "route": "/routes/0400/:id",
+        "status": 200,
+        "duration_ms": 10,
+        "trace_id": "trace-0400"
+      }
+    ],
+    "since": "2026-05-02T00:00:00Z",
+    "until": "2026-05-01T00:00:00Z"
+  },
+  "error_contains": "positive duration",
+  "id": "window-0401",
+  "description": "reject reversed selection windows for trace-0400"
+}
