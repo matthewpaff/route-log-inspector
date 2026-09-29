@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 200,
+        "duration_ms": 14,
+        "trace_id": "trace-0404"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      },
+      {
+        "timestamp": "2026-02-27T12:00:00Z",
+        "route": "/routes/0404/:id",
+        "status": 503,
+        "duration_ms": 28,
+        "trace_id": "trace-0404"
+      }
+    ],
+    "minimum_requests": 7
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0404/:id",
+        "baseline_requests": 7,
+        "current_requests": 7,
+        "status": "compared",
+        "p95_delta_ms": 14,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0405",
+  "description": "report a 14 ms latency delta at the sample boundary on /routes/0404/:id"
+}
