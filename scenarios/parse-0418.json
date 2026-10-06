@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "parse",
+  "input": {
+    "jsonl": "{\"timestamp\": \"2026-02-13T12:00:00Z\", \"route\": \"/routes/0417/:id\", \"status\": true, \"duration_ms\": 27, \"trace_id\": \"trace-0417\"}\n"
+  },
+  "error_contains": "Invalid HTTP status",
+  "id": "parse-0418",
+  "description": "reject boolean HTTP status on /routes/0417/:id"
+}
