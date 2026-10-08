@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 200,
+        "duration_ms": 38,
+        "trace_id": "trace-0428"
+      },
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 200,
+        "duration_ms": 38,
+        "trace_id": "trace-0428"
+      },
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 200,
+        "duration_ms": 38,
+        "trace_id": "trace-0428"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 503,
+        "duration_ms": 53,
+        "trace_id": "trace-0428"
+      },
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 503,
+        "duration_ms": 53,
+        "trace_id": "trace-0428"
+      },
+      {
+        "timestamp": "2026-02-24T12:00:00Z",
+        "route": "/routes/0428/:id",
+        "status": 503,
+        "duration_ms": 53,
+        "trace_id": "trace-0428"
+      }
+    ],
+    "minimum_requests": 3
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0428/:id",
+        "baseline_requests": 3,
+        "current_requests": 3,
+        "status": "compared",
+        "p95_delta_ms": 15,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0429",
+  "description": "report a 15 ms latency delta at the sample boundary on /routes/0428/:id"
+}
