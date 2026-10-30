@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "baseline",
+  "input": {
+    "baseline": [
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 200,
+        "duration_ms": 62,
+        "trace_id": "trace-0452"
+      }
+    ],
+    "rows": [
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      },
+      {
+        "timestamp": "2026-02-21T12:00:00Z",
+        "route": "/routes/0452/:id",
+        "status": 503,
+        "duration_ms": 78,
+        "trace_id": "trace-0452"
+      }
+    ],
+    "minimum_requests": 6
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0452/:id",
+        "baseline_requests": 6,
+        "current_requests": 6,
+        "status": "compared",
+        "p95_delta_ms": 16,
+        "error_rate_delta_pct": "100.00"
+      }
+    ]
+  },
+  "id": "baseline-0453",
+  "description": "report a 16 ms latency delta at the sample boundary on /routes/0452/:id"
+}
