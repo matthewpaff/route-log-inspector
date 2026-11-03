@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "kind": "summary",
+  "input": {
+    "rows": [
+      {
+        "timestamp": "2026-02-26T12:00:00Z",
+        "route": "/routes/0457/:id/other",
+        "status": 503,
+        "duration_ms": 500,
+        "trace_id": "trace-0457-other"
+      },
+      {
+        "timestamp": "2026-02-26T12:00:00Z",
+        "route": "/routes/0457/:id",
+        "status": 200,
+        "duration_ms": 67,
+        "trace_id": "trace-0457"
+      }
+    ],
+    "route": "/routes/0457/:id"
+  },
+  "expected": {
+    "routes": [
+      {
+        "route": "/routes/0457/:id",
+        "requests": 1,
+        "errors_5xx": 0,
+        "error_rate_pct": "0.00",
+        "p50_ms": 67,
+        "p95_ms": 67
+      }
+    ],
+    "total_requests": 1
+  },
+  "id": "summary-0458",
+  "description": "isolate route filters for /routes/0457/:id"
+}
